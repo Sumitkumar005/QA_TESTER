@@ -11,6 +11,9 @@
 <a href="https://youtu.be/1DQ3DU7mtOo" target="_blank">
 <img src="https://www.google.com/search?q=https://img.youtube.com/vi/1DQ3DU7mtOo/maxresdefault.jpg" alt="Watch the Demo Video" style="width:100%; max-width: 600px; border-radius: 10px; display: block; margin-left: auto; margin-right: auto;">
 </a>
+<a href="https://youtu.be/1DQ3DU7mtOo" target="_blank" style="display: block; text-align: center; text-decoration: none; color: #FF0000; font-weight: bold;">
+<img src="https://upload.wikimedia.org/wikipedia/commons/0/09/YouTube_full-color_icon_%282017%29.svg" alt="YouTube Logo" style="width: 24px; vertical-align: middle; margin-right: 8px;"> Watch the Demo Video
+</a>
 
 ## ✨ Features
 
