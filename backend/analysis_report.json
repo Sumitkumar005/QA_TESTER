@@ -1,0 +1,814 @@
+{
+  "report_id": "d72df7ee-aa53-43bd-8282-74379851bd7b",
+  "status": "completed",
+  "metrics": {
+    "total_files": 5,
+    "total_lines": 607,
+    "languages": {
+      "python": 5
+    },
+    "complexity_average": 15.4,
+    "maintainability_average": 38.0,
+    "test_coverage_average": null,
+    "technical_debt_hours": 20.5
+  },
+  "issues": [
+    {
+      "id": "7f724e97-b2fb-4e1f-a7a8-97196498c986",
+      "category": "security",
+      "severity": "high",
+      "title": "Security vulnerability: Use of eval() can lead to code injection",
+      "description": "Use of eval() can lead to code injection",
+      "file_path": "pr_review.py",
+      "line_number": 192,
+      "column_number": null,
+      "code_snippet": "if 'eval(' in line:",
+      "suggestion": "Review and secure this code pattern",
+      "impact_score": 9.4,
+      "confidence": 0.8,
+      "tags": [
+        "security",
+        "vulnerability"
+      ]
+    },
+    {
+      "id": "cad47bde-5b96-4937-9284-8ed4c25f27c0",
+      "category": "security",
+      "severity": "high",
+      "title": "Security vulnerability: Use of eval() can lead to code injection",
+      "description": "Use of eval() can lead to code injection",
+      "file_path": "pr_review.py",
+      "line_number": 197,
+      "column_number": null,
+      "code_snippet": "\"message\": \"Use of eval() poses security risks\"",
+      "suggestion": "Review and secure this code pattern",
+      "impact_score": 9.4,
+      "confidence": 0.8,
+      "tags": [
+        "security",
+        "vulnerability"
+      ]
+    },
+    {
+      "id": "f81307c9-90a1-4ab5-87e8-3aae24e764b1",
+      "category": "security",
+      "severity": "high",
+      "title": "Security vulnerability: Use of eval() can lead to code injection",
+      "description": "Use of eval() can lead to code injection",
+      "file_path": "pr_review.py",
+      "line_number": 199,
+      "column_number": null,
+      "code_snippet": "suggestions.append(\"Avoid using eval() - consider safer alternatives\")",
+      "suggestion": "Review and secure this code pattern",
+      "impact_score": 9.4,
+      "confidence": 0.8,
+      "tags": [
+        "security",
+        "vulnerability"
+      ]
+    },
+    {
+      "id": "50162dfa-0e2a-477e-a0cc-16789f7fcf21",
+      "category": "performance",
+      "severity": "medium",
+      "title": "Performance issue: Consider list comprehension for better performance",
+      "description": "Consider list comprehension for better performance",
+      "file_path": "pr_review.py",
+      "line_number": 73,
+      "column_number": null,
+      "code_snippet": "functions.append(node.name)",
+      "suggestion": "Consider list comprehension for better performance",
+      "impact_score": 4.73,
+      "confidence": 0.7,
+      "tags": [
+        "performance",
+        "optimization"
+      ]
+    },
+    {
+      "id": "b8cc444c-0c41-4298-b260-eb4eb195c571",
+      "category": "performance",
+      "severity": "medium",
+      "title": "Performance issue: Consider list comprehension for better performance",
+      "description": "Consider list comprehension for better performance",
+      "file_path": "pr_review.py",
+      "line_number": 85,
+      "column_number": null,
+      "code_snippet": "suggestions.append(f\"Consider refactoring function '{node.name}' to reduce complexity\")",
+      "suggestion": "Consider list comprehension for better performance",
+      "impact_score": 4.73,
+      "confidence": 0.7,
+      "tags": [
+        "performance",
+        "optimization"
+      ]
+    },
+    {
+      "id": "6c54ce0f-74d2-4623-b971-0ea73e55c10f",
+      "category": "performance",
+      "severity": "medium",
+      "title": "Performance issue: Consider list comprehension for better performance",
+      "description": "Consider list comprehension for better performance",
+      "file_path": "pr_review.py",
+      "line_number": 88,
+      "column_number": null,
+      "code_snippet": "classes.append(node.name)",
+      "suggestion": "Consider list comprehension for better performance",
+      "impact_score": 4.73,
+      "confidence": 0.7,
+      "tags": [
+        "performance",
+        "optimization"
+      ]
+    },
+    {
+      "id": "3fa6a034-205a-480f-a109-8380ab34aabb",
+      "category": "maintainability",
+      "severity": "medium",
+      "title": "Class too large",
+      "description": "Class 'CodeAnalyzer' is 238 lines long",
+      "file_path": "pr_review.py",
+      "line_number": 55,
+      "column_number": null,
+      "code_snippet": null,
+      "suggestion": "Consider splitting this class into smaller, more focused classes",
+      "impact_score": 4.32,
+      "confidence": 1.0,
+      "tags": [
+        "maintainability",
+        "class-size"
+      ]
+    },
+    {
+      "id": "7d01b299-ca25-48e1-a3ca-d3511a294cd6",
+      "category": "maintainability",
+      "severity": "medium",
+      "title": "Function too long",
+      "description": "Function 'analyze_python_file' is 84 lines long",
+      "file_path": "pr_review.py",
+      "line_number": 59,
+      "column_number": null,
+      "code_snippet": null,
+      "suggestion": "Consider breaking this function into smaller functions",
+      "impact_score": 4.32,
+      "confidence": 1.0,
+      "tags": [
+        "maintainability",
+        "function-length"
+      ]
+    },
+    {
+      "id": "cbeaa895-5db9-43ec-a6ad-272b5a2ec1d8",
+      "category": "performance",
+      "severity": "medium",
+      "title": "Performance issue: Consider list comprehension for better performance",
+      "description": "Consider list comprehension for better performance",
+      "file_path": "pr_review.py",
+      "line_number": 164,
+      "column_number": null,
+      "code_snippet": "functions.append(match.group(1))",
+      "suggestion": "Consider list comprehension for better performance",
+      "impact_score": 3.94,
+      "confidence": 0.7,
+      "tags": [
+        "performance",
+        "optimization"
+      ]
+    },
+    {
+      "id": "8773ca5d-1a8e-495a-8e92-0d39b28e64e7",
+      "category": "performance",
+      "severity": "medium",
+      "title": "Performance issue: Consider list comprehension for better performance",
+      "description": "Consider list comprehension for better performance",
+      "file_path": "pr_review.py",
+      "line_number": 170,
+      "column_number": null,
+      "code_snippet": "functions.append(match.group(1))",
+      "suggestion": "Consider list comprehension for better performance",
+      "impact_score": 3.94,
+      "confidence": 0.7,
+      "tags": [
+        "performance",
+        "optimization"
+      ]
+    },
+    {
+      "id": "0cb49c40-71a3-4141-9ccc-46668af1d7c9",
+      "category": "performance",
+      "severity": "medium",
+      "title": "Performance issue: Consider list comprehension for better performance",
+      "description": "Consider list comprehension for better performance",
+      "file_path": "pr_review.py",
+      "line_number": 176,
+      "column_number": null,
+      "code_snippet": "classes.append(match.group(1))",
+      "suggestion": "Consider list comprehension for better performance",
+      "impact_score": 3.94,
+      "confidence": 0.7,
+      "tags": [
+        "performance",
+        "optimization"
+      ]
+    },
+    {
+      "id": "38bec58b-1e71-47fa-a2ce-a5e4c2dcd46f",
+      "category": "performance",
+      "severity": "medium",
+      "title": "Performance issue: Consider list comprehension for better performance",
+      "description": "Consider list comprehension for better performance",
+      "file_path": "pr_review.py",
+      "line_number": 190,
+      "column_number": null,
+      "code_snippet": "suggestions.append(\"Use proper logging instead of console.log()\")",
+      "suggestion": "Consider list comprehension for better performance",
+      "impact_score": 3.94,
+      "confidence": 0.7,
+      "tags": [
+        "performance",
+        "optimization"
+      ]
+    },
+    {
+      "id": "3fe49f13-3618-47be-94dd-5007d2f541c3",
+      "category": "performance",
+      "severity": "medium",
+      "title": "Performance issue: Consider list comprehension for better performance",
+      "description": "Consider list comprehension for better performance",
+      "file_path": "pr_review.py",
+      "line_number": 199,
+      "column_number": null,
+      "code_snippet": "suggestions.append(\"Avoid using eval() - consider safer alternatives\")",
+      "suggestion": "Consider list comprehension for better performance",
+      "impact_score": 3.94,
+      "confidence": 0.7,
+      "tags": [
+        "performance",
+        "optimization"
+      ]
+    },
+    {
+      "id": "6cc4a3d7-9303-48ae-8dd3-9ae9d10f4e98",
+      "category": "performance",
+      "severity": "medium",
+      "title": "Performance issue: Consider list comprehension for better performance",
+      "description": "Consider list comprehension for better performance",
+      "file_path": "pr_review.py",
+      "line_number": 400,
+      "column_number": null,
+      "code_snippet": "file_analyses.append(file_analysis)",
+      "suggestion": "Consider list comprehension for better performance",
+      "impact_score": 3.94,
+      "confidence": 0.7,
+      "tags": [
+        "performance",
+        "optimization"
+      ]
+    },
+    {
+      "id": "2c10d200-9946-48ca-849e-aed0dbc9cec9",
+      "category": "performance",
+      "severity": "medium",
+      "title": "Performance issue: Consider list comprehension for better performance",
+      "description": "Consider list comprehension for better performance",
+      "file_path": "pr_review.py",
+      "line_number": 430,
+      "column_number": null,
+      "code_snippet": "recommendations.append(\"Consider breaking down complex functions to improve maintainability\")",
+      "suggestion": "Consider list comprehension for better performance",
+      "impact_score": 3.94,
+      "confidence": 0.7,
+      "tags": [
+        "performance",
+        "optimization"
+      ]
+    },
+    {
+      "id": "918b6e7c-0f07-4615-9af0-1c8a26fa8886",
+      "category": "performance",
+      "severity": "medium",
+      "title": "Performance issue: Consider list comprehension for better performance",
+      "description": "Consider list comprehension for better performance",
+      "file_path": "pr_review.py",
+      "line_number": 432,
+      "column_number": null,
+      "code_snippet": "recommendations.append(\"Address critical security and syntax issues before merging\")",
+      "suggestion": "Consider list comprehension for better performance",
+      "impact_score": 3.94,
+      "confidence": 0.7,
+      "tags": [
+        "performance",
+        "optimization"
+      ]
+    },
+    {
+      "id": "1378de19-688e-4597-9b54-26b9203e60f3",
+      "category": "performance",
+      "severity": "medium",
+      "title": "Performance issue: Consider list comprehension for better performance",
+      "description": "Consider list comprehension for better performance",
+      "file_path": "pr_review.py",
+      "line_number": 434,
+      "column_number": null,
+      "code_snippet": "recommendations.append(\"Refactor code to improve maintainability scores\")",
+      "suggestion": "Consider list comprehension for better performance",
+      "impact_score": 3.94,
+      "confidence": 0.7,
+      "tags": [
+        "performance",
+        "optimization"
+      ]
+    },
+    {
+      "id": "a43bd2e6-8e6e-4d9d-8fa2-32c2992cf6eb",
+      "category": "performance",
+      "severity": "medium",
+      "title": "Performance issue: Consider list comprehension for better performance",
+      "description": "Consider list comprehension for better performance",
+      "file_path": "pr_review.py",
+      "line_number": 436,
+      "column_number": null,
+      "code_snippet": "recommendations.append(\"Large changeset - consider splitting into smaller PRs\")",
+      "suggestion": "Consider list comprehension for better performance",
+      "impact_score": 3.94,
+      "confidence": 0.7,
+      "tags": [
+        "performance",
+        "optimization"
+      ]
+    },
+    {
+      "id": "a30a32c3-f769-43d8-b30d-63c74e250a03",
+      "category": "performance",
+      "severity": "medium",
+      "title": "Performance issue: Consider list comprehension for better performance",
+      "description": "Consider list comprehension for better performance",
+      "file_path": "reports.py",
+      "line_number": 129,
+      "column_number": null,
+      "code_snippet": "recommendations.append(\"Great job! No major issues found in your codebase.\")",
+      "suggestion": "Consider list comprehension for better performance",
+      "impact_score": 3.94,
+      "confidence": 0.7,
+      "tags": [
+        "performance",
+        "optimization"
+      ]
+    },
+    {
+      "id": "99eec674-ecff-4ec6-86bc-0f0e1e20ee6c",
+      "category": "performance",
+      "severity": "medium",
+      "title": "Performance issue: Consider list comprehension for better performance",
+      "description": "Consider list comprehension for better performance",
+      "file_path": "reports.py",
+      "line_number": 135,
+      "column_number": null,
+      "code_snippet": "recommendations.append(f\"Address {len(security_issues)} security issues to improve application security.\")",
+      "suggestion": "Consider list comprehension for better performance",
+      "impact_score": 3.94,
+      "confidence": 0.7,
+      "tags": [
+        "performance",
+        "optimization"
+      ]
+    },
+    {
+      "id": "a3b0ea6b-2ff4-4876-8815-75fd82be2401",
+      "category": "performance",
+      "severity": "medium",
+      "title": "Performance issue: Consider list comprehension for better performance",
+      "description": "Consider list comprehension for better performance",
+      "file_path": "reports.py",
+      "line_number": 140,
+      "column_number": null,
+      "code_snippet": "recommendations.append(f\"Optimize {len(performance_issues)} performance bottlenecks for better user experience.\")",
+      "suggestion": "Consider list comprehension for better performance",
+      "impact_score": 3.94,
+      "confidence": 0.7,
+      "tags": [
+        "performance",
+        "optimization"
+      ]
+    },
+    {
+      "id": "6230a076-5522-439d-8ce6-081d527cf54b",
+      "category": "performance",
+      "severity": "medium",
+      "title": "Performance issue: Consider list comprehension for better performance",
+      "description": "Consider list comprehension for better performance",
+      "file_path": "reports.py",
+      "line_number": 145,
+      "column_number": null,
+      "code_snippet": "recommendations.append(f\"Improve {len(maintainability_issues)} maintainability issues to reduce technical debt.\")",
+      "suggestion": "Consider list comprehension for better performance",
+      "impact_score": 3.94,
+      "confidence": 0.7,
+      "tags": [
+        "performance",
+        "optimization"
+      ]
+    },
+    {
+      "id": "b6982698-4431-46ef-934e-31b8f4150fc6",
+      "category": "performance",
+      "severity": "medium",
+      "title": "Performance issue: Consider list comprehension for better performance",
+      "description": "Consider list comprehension for better performance",
+      "file_path": "reports.py",
+      "line_number": 150,
+      "column_number": null,
+      "code_snippet": "recommendations.append(f\"Add tests to cover {len(testing_issues)} areas lacking proper test coverage.\")",
+      "suggestion": "Consider list comprehension for better performance",
+      "impact_score": 3.94,
+      "confidence": 0.7,
+      "tags": [
+        "performance",
+        "optimization"
+      ]
+    },
+    {
+      "id": "9838c3a4-c793-4c1d-9817-cb36fc23c834",
+      "category": "performance",
+      "severity": "medium",
+      "title": "Performance issue: Consider list comprehension for better performance",
+      "description": "Consider list comprehension for better performance",
+      "file_path": "reports.py",
+      "line_number": 155,
+      "column_number": null,
+      "code_snippet": "recommendations.append(f\"Improve documentation for {len(doc_issues)} components to enhance code understanding.\")",
+      "suggestion": "Consider list comprehension for better performance",
+      "impact_score": 3.94,
+      "confidence": 0.7,
+      "tags": [
+        "performance",
+        "optimization"
+      ]
+    },
+    {
+      "id": "30272e40-2c10-42e8-93e0-a05ed322335d",
+      "category": "performance",
+      "severity": "medium",
+      "title": "Performance issue: Consider list comprehension for better performance",
+      "description": "Consider list comprehension for better performance",
+      "file_path": "reports.py",
+      "line_number": 159,
+      "column_number": null,
+      "code_snippet": "recommendations.append(\"Consider refactoring complex functions to improve code readability and maintainability.\")",
+      "suggestion": "Consider list comprehension for better performance",
+      "impact_score": 3.94,
+      "confidence": 0.7,
+      "tags": [
+        "performance",
+        "optimization"
+      ]
+    },
+    {
+      "id": "a269182e-3cb1-4e76-b48e-8a2c70b4845f",
+      "category": "maintainability",
+      "severity": "medium",
+      "title": "Function too long",
+      "description": "Function 'analyze_javascript_file' is 72 lines long",
+      "file_path": "pr_review.py",
+      "line_number": 146,
+      "column_number": null,
+      "code_snippet": null,
+      "suggestion": "Consider breaking this function into smaller functions",
+      "impact_score": 3.6,
+      "confidence": 1.0,
+      "tags": [
+        "maintainability",
+        "function-length"
+      ]
+    },
+    {
+      "id": "c2fc0e1e-fe15-4187-a48e-5eb5cd41c935",
+      "category": "maintainability",
+      "severity": "low",
+      "title": "Technical debt comment",
+      "description": "Found TODO/FIXME comment indicating incomplete work",
+      "file_path": "reports.py",
+      "line_number": 55,
+      "column_number": null,
+      "code_snippet": "trends=None  # TODO: Implement trends",
+      "suggestion": "Address the technical debt indicated by this comment",
+      "impact_score": 2.88,
+      "confidence": 1.0,
+      "tags": [
+        "technical-debt",
+        "maintainability"
+      ]
+    },
+    {
+      "id": "94973602-0095-4cb9-a1fd-90ce5dfade26",
+      "category": "code_quality",
+      "severity": "low",
+      "title": "Line too long",
+      "description": "Line exceeds 120 characters (137 chars)",
+      "file_path": "reports.py",
+      "line_number": 77,
+      "column_number": null,
+      "code_snippet": "    maintainability_issues = len([i for i in result.issues if i.category in [IssueCategory.MAINTAINA...",
+      "suggestion": "Break long lines into multiple lines for better readability",
+      "impact_score": 2.4,
+      "confidence": 1.0,
+      "tags": [
+        "code-quality",
+        "readability"
+      ]
+    },
+    {
+      "id": "047e5717-812a-4ad4-8e99-8991525d22a1",
+      "category": "code_quality",
+      "severity": "low",
+      "title": "Line too long",
+      "description": "Line exceeds 120 characters (133 chars)",
+      "file_path": "pr_review.py",
+      "line_number": 369,
+      "column_number": null,
+      "code_snippet": "                        content_url = f\"https://api.github.com/repos/{owner}/{repo}/contents/{filena...",
+      "suggestion": "Break long lines into multiple lines for better readability",
+      "impact_score": 2.0,
+      "confidence": 1.0,
+      "tags": [
+        "code-quality",
+        "readability"
+      ]
+    },
+    {
+      "id": "bb279b3a-a788-44e3-b03c-9562849eea81",
+      "category": "code_quality",
+      "severity": "low",
+      "title": "Line too long",
+      "description": "Line exceeds 120 characters (166 chars)",
+      "file_path": "pr_review.py",
+      "line_number": 463,
+      "column_number": null,
+      "code_snippet": "            message = f\"Enhanced code quality analysis completed. Reviewed {len(file_analyses)} code...",
+      "suggestion": "Break long lines into multiple lines for better readability",
+      "impact_score": 2.0,
+      "confidence": 1.0,
+      "tags": [
+        "code-quality",
+        "readability"
+      ]
+    },
+    {
+      "id": "5416077c-f32c-4136-8cc9-f3c78761dc22",
+      "category": "code_quality",
+      "severity": "low",
+      "title": "Line too long",
+      "description": "Line exceeds 120 characters (150 chars)",
+      "file_path": "pr_review.py",
+      "line_number": 498,
+      "column_number": null,
+      "code_snippet": "    return {\"status\": \"healthy\", \"service\": \"enhanced_pr_review\", \"features\": [\"complexity_analysis\"...",
+      "suggestion": "Break long lines into multiple lines for better readability",
+      "impact_score": 2.0,
+      "confidence": 1.0,
+      "tags": [
+        "code-quality",
+        "readability"
+      ]
+    },
+    {
+      "id": "3977ebc6-586b-4915-865c-82cac313d49e",
+      "category": "code_quality",
+      "severity": "low",
+      "title": "Line too long",
+      "description": "Line exceeds 120 characters (141 chars)",
+      "file_path": "reports.py",
+      "line_number": 119,
+      "column_number": null,
+      "code_snippet": "    severity_order = {IssueSeverity.CRITICAL: 5, IssueSeverity.HIGH: 4, IssueSeverity.MEDIUM: 3, Iss...",
+      "suggestion": "Break long lines into multiple lines for better readability",
+      "impact_score": 2.0,
+      "confidence": 1.0,
+      "tags": [
+        "code-quality",
+        "readability"
+      ]
+    },
+    {
+      "id": "b5ac687e-72ce-4f2a-9a1f-0fadb5ad80d4",
+      "category": "code_quality",
+      "severity": "low",
+      "title": "Line too long",
+      "description": "Line exceeds 120 characters (121 chars)",
+      "file_path": "reports.py",
+      "line_number": 140,
+      "column_number": null,
+      "code_snippet": "        recommendations.append(f\"Optimize {len(performance_issues)} performance bottlenecks for bett...",
+      "suggestion": "Break long lines into multiple lines for better readability",
+      "impact_score": 2.0,
+      "confidence": 1.0,
+      "tags": [
+        "code-quality",
+        "readability"
+      ]
+    },
+    {
+      "id": "7fbfaca7-3840-40f4-81ba-7c5f47438c16",
+      "category": "code_quality",
+      "severity": "low",
+      "title": "Line too long",
+      "description": "Line exceeds 120 characters (121 chars)",
+      "file_path": "reports.py",
+      "line_number": 145,
+      "column_number": null,
+      "code_snippet": "        recommendations.append(f\"Improve {len(maintainability_issues)} maintainability issues to red...",
+      "suggestion": "Break long lines into multiple lines for better readability",
+      "impact_score": 2.0,
+      "confidence": 1.0,
+      "tags": [
+        "code-quality",
+        "readability"
+      ]
+    },
+    {
+      "id": "d99d7e01-4103-4d5f-9a7c-0374c62fedc1",
+      "category": "code_quality",
+      "severity": "low",
+      "title": "Line too long",
+      "description": "Line exceeds 120 characters (121 chars)",
+      "file_path": "reports.py",
+      "line_number": 159,
+      "column_number": null,
+      "code_snippet": "        recommendations.append(\"Consider refactoring complex functions to improve code readability a...",
+      "suggestion": "Break long lines into multiple lines for better readability",
+      "impact_score": 2.0,
+      "confidence": 1.0,
+      "tags": [
+        "code-quality",
+        "readability"
+      ]
+    },
+    {
+      "id": "8655f941-82a7-418c-bbb3-6c886ca2cb22",
+      "category": "documentation",
+      "severity": "low",
+      "title": "Missing class docstring",
+      "description": "Class 'CodeQualityMetrics' has no docstring",
+      "file_path": "pr_review.py",
+      "line_number": 17,
+      "column_number": null,
+      "code_snippet": null,
+      "suggestion": "Add a docstring to document the class's purpose",
+      "impact_score": 1.44,
+      "confidence": 1.0,
+      "tags": [
+        "documentation",
+        "docstring",
+        "class"
+      ]
+    },
+    {
+      "id": "bc3d0840-66fa-476d-80c6-e43e40120e1c",
+      "category": "documentation",
+      "severity": "low",
+      "title": "Missing class docstring",
+      "description": "Class 'FileAnalysis' has no docstring",
+      "file_path": "pr_review.py",
+      "line_number": 25,
+      "column_number": null,
+      "code_snippet": null,
+      "suggestion": "Add a docstring to document the class's purpose",
+      "impact_score": 1.44,
+      "confidence": 1.0,
+      "tags": [
+        "documentation",
+        "docstring",
+        "class"
+      ]
+    },
+    {
+      "id": "4c2d7e55-e3ed-4bbc-ae7c-d04482c9727c",
+      "category": "documentation",
+      "severity": "low",
+      "title": "Missing class docstring",
+      "description": "Class 'PRReviewRequest' has no docstring",
+      "file_path": "pr_review.py",
+      "line_number": 37,
+      "column_number": null,
+      "code_snippet": null,
+      "suggestion": "Add a docstring to document the class's purpose",
+      "impact_score": 1.44,
+      "confidence": 1.0,
+      "tags": [
+        "documentation",
+        "docstring",
+        "class"
+      ]
+    },
+    {
+      "id": "7fab3740-4391-4003-be4f-e0f5ae6f2222",
+      "category": "documentation",
+      "severity": "low",
+      "title": "Missing class docstring",
+      "description": "Class 'EnhancedPRReviewResponse' has no docstring",
+      "file_path": "pr_review.py",
+      "line_number": 41,
+      "column_number": null,
+      "code_snippet": null,
+      "suggestion": "Add a docstring to document the class's purpose",
+      "impact_score": 1.44,
+      "confidence": 1.0,
+      "tags": [
+        "documentation",
+        "docstring",
+        "class"
+      ]
+    },
+    {
+      "id": "e9e6e9a5-b722-4334-9b88-8d31fb15c607",
+      "category": "documentation",
+      "severity": "low",
+      "title": "Missing class docstring",
+      "description": "Class 'QuestionRequest' has no docstring",
+      "file_path": "qa.py",
+      "line_number": 11,
+      "column_number": null,
+      "code_snippet": null,
+      "suggestion": "Add a docstring to document the class's purpose",
+      "impact_score": 1.44,
+      "confidence": 1.0,
+      "tags": [
+        "documentation",
+        "docstring",
+        "class"
+      ]
+    },
+    {
+      "id": "f293895b-e934-4358-a6dc-f6d02235a52c",
+      "category": "documentation",
+      "severity": "low",
+      "title": "Missing class docstring",
+      "description": "Class 'QuestionResponse' has no docstring",
+      "file_path": "qa.py",
+      "line_number": 16,
+      "column_number": null,
+      "code_snippet": null,
+      "suggestion": "Add a docstring to document the class's purpose",
+      "impact_score": 1.44,
+      "confidence": 1.0,
+      "tags": [
+        "documentation",
+        "docstring",
+        "class"
+      ]
+    }
+  ],
+  "file_metrics": [
+    {
+      "file_path": "analysis.py",
+      "language": "python",
+      "lines_of_code": 75,
+      "complexity": 8.0,
+      "maintainability_index": 20.0,
+      "test_coverage": null,
+      "issues_count": 0
+    },
+    {
+      "file_path": "pr_review.py",
+      "language": "python",
+      "lines_of_code": 393,
+      "complexity": 50.0,
+      "maintainability_index": 0.0,
+      "test_coverage": null,
+      "issues_count": 26
+    },
+    {
+      "file_path": "qa.py",
+      "language": "python",
+      "lines_of_code": 27,
+      "complexity": 1.0,
+      "maintainability_index": 80.0,
+      "test_coverage": null,
+      "issues_count": 2
+    },
+    {
+      "file_path": "reports.py",
+      "language": "python",
+      "lines_of_code": 111,
+      "complexity": 17.0,
+      "maintainability_index": 0.0,
+      "test_coverage": null,
+      "issues_count": 13
+    },
+    {
+      "file_path": "__init__.py",
+      "language": "python",
+      "lines_of_code": 1,
+      "complexity": 1.0,
+      "maintainability_index": 90.0,
+      "test_coverage": null,
+      "issues_count": 0
+    }
+  ],
+  "summary": {
+    "total_issues": 41,
+    "critical_issues": 0,
+    "high_issues": 3,
+    "files_analyzed": 5
+  }
+}

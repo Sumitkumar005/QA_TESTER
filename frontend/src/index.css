@@ -1,0 +1,121 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #121212;
+  color: #ffffff;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #333;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #555;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #777;
+}
+
+/* Global styles */
+* {
+  box-sizing: border-box;
+}
+
+.app-loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #121212;
+}
+
+.app-loading h1 {
+  color: #3f51b5;
+  margin-bottom: 20px;
+  font-weight: 300;
+}
+
+.spinner {
+  border: 4px solid #333;
+  border-top: 4px solid #3f51b5;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  margin-bottom: 10px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Utility classes */
+.text-center {
+  text-align: center;
+}
+
+.mb-3 {
+  margin-bottom: 24px !important;
+}
+
+.mt-3 {
+  margin-top: 24px !important;
+}
+
+/* Custom component styles */
+.code-snippet {
+  background-color: #2d2d2d !important;
+  border-radius: 4px;
+  padding: 16px;
+  font-family: 'Courier New', monospace;
+  font-size: 14px;
+  overflow-x: auto;
+  margin: 16px 0;
+}
+
+.issue-card {
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.issue-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3) !important;
+}
+
+.severity-critical {
+  border-left: 4px solid #f44336 !important;
+}
+
+.severity-high {
+  border-left: 4px solid #ff9800 !important;
+}
+
+.severity-medium {
+  border-left: 4px solid #ffc107 !important;
+}
+
+.severity-low {
+  border-left: 4px solid #4caf50 !important;
+}
+
+.severity-info {
+  border-left: 4px solid #2196f3 !important;
+}

@@ -1,0 +1,49 @@
+# backend/requirements.txt - FIXED VERSIONS
+# FastAPI and related
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+python-multipart==0.0.6
+pydantic==2.5.0
+pydantic-settings==2.1.0
+
+# Database
+motor==3.3.2
+pymongo==4.6.0
+
+# AI and ML - FIXED VERSIONS
+google-generativeai==0.3.2
+sentence-transformers==2.3.1
+faiss-cpu==1.12.0
+numpy>=1.26.0
+
+# Async and HTTP
+httpx==0.25.2
+aiofiles==23.2.1
+
+# Code analysis
+radon==6.0.1
+bandit==1.7.5
+
+# Utilities
+python-dotenv==1.0.0
+click==8.1.7
+rich==13.7.1
+pathlib2==2.3.7
+
+# Testing
+pytest==7.4.3
+pytest-asyncio==0.21.1
+pytest-cov==4.1.0
+
+# Development
+black==23.11.0
+flake8==6.1.0
+mypy==1.7.1
+
+# Security
+cryptography==41.0.7
+
+# Additional dependencies that might be needed
+gunicorn==21.2.0
+Jinja2==3.1.2
+MarkupSafe==2.1.3

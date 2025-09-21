@@ -1,0 +1,51 @@
+{
+  "report_id": "13888d76-77bb-4d84-aff3-9e3e5326085a",
+  "status": "completed",
+  "metrics": {
+    "total_files": 3,
+    "total_lines": 86,
+    "languages": {
+      "python": 3
+    },
+    "complexity_average": 1.6666666666666667,
+    "maintainability_average": 83.33333333333333,
+    "test_coverage_average": null,
+    "technical_debt_hours": 0.0
+  },
+  "issues": [],
+  "file_metrics": [
+    {
+      "file_path": "mongodb.py",
+      "language": "python",
+      "lines_of_code": 60,
+      "complexity": 3.0,
+      "maintainability_index": 70.0,
+      "test_coverage": null,
+      "issues_count": 0
+    },
+    {
+      "file_path": "vector_db.py",
+      "language": "python",
+      "lines_of_code": 26,
+      "complexity": 1.0,
+      "maintainability_index": 90.0,
+      "test_coverage": null,
+      "issues_count": 0
+    },
+    {
+      "file_path": "__init__.py",
+      "language": "python",
+      "lines_of_code": 0,
+      "complexity": 1.0,
+      "maintainability_index": 90.0,
+      "test_coverage": null,
+      "issues_count": 0
+    }
+  ],
+  "summary": {
+    "total_issues": 0,
+    "critical_issues": 0,
+    "high_issues": 0,
+    "files_analyzed": 3
+  }
+}

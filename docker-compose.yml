@@ -1,0 +1,65 @@
+# docker-compose.yml
+version: '3.8'
+
+services:
+  mongodb:
+    image: mongo:7.0
+    container_name: code-quality-mongodb
+    restart: unless-stopped
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongodb_data:/data/db
+      - ./mongo-init:/docker-entrypoint-initdb.d
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: password
+      MONGO_INITDB_DATABASE: code_quality_db
+    networks:
+      - code-quality-network
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: code-quality-backend
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./backend:/app
+      - ./data:/app/data
+      - ./temp:/app/temp
+    environment:
+      - MONGODB_URL=mongodb://root:password@mongodb:27017/code_quality_db?authSource=admin
+      - DATABASE_NAME=code_quality_db
+      - GEMINI_API_KEY=${GEMINI_API_KEY}
+      - GITHUB_TOKEN=${GITHUB_TOKEN}
+      - FAISS_INDEX_PATH=/app/data/faiss_index
+      - TEMP_DIR=/app/temp
+    depends_on:
+      - mongodb
+    networks:
+      - code-quality-network
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: code-quality-frontend
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    environment:
+      - REACT_APP_API_URL=http://localhost:8000
+    depends_on:
+      - backend
+    networks:
+      - code-quality-network
+
+volumes:
+  mongodb_data:
+
+networks:
+  code-quality-network:
+    driver: bridge
