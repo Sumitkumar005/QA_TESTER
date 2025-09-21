@@ -9,7 +9,6 @@
 [![Docker](https://img.shields.io/badge/docker-ready-blue.svg)](https://www.docker.com/)
 
 <a href="https://youtu.be/1DQ3DU7mtOo" target="_blank">
-<img src="https://img.youtube.com/vi/1DQ3DU7mtOo/maxresdefault.jpg" alt="DemoCLI Video Thumbnail" style="width:100%; max-width: 600px; border-radius: 10px; display: block; margin-left: auto; margin-right: auto;">
 <div style="text-align: center; margin-top: 10px;">
 <img src="https://upload.wikimedia.org/wikipedia/commons/0/09/YouTube_full-color_icon_%282017%29.svg" alt="YouTube Logo" style="width: 24px; vertical-align: middle; margin-right: 8px;"> 
 <span style="color: #FF0000; font-weight: bold; text-decoration: none;">Watch the DemoCLI Video</span>
