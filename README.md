@@ -8,6 +8,10 @@
 [![Node 18+](https://img.shields.io/badge/node-18+-green.svg)](https://nodejs.org/)
 [![Docker](https://img.shields.io/badge/docker-ready-blue.svg)](https://www.docker.com/)
 
+<a href="https://youtu.be/1DQ3DU7mtOo" target="_blank">
+<img src="https://www.google.com/search?q=https://img.youtube.com/vi/1DQ3DU7mtOo/maxresdefault.jpg" alt="Watch the Demo Video" style="width:100%; max-width: 600px; border-radius: 10px; display: block; margin-left: auto; margin-right: auto;">
+</a>
+
 ## ✨ Features
 
 ### 🎯 Core Capabilities
