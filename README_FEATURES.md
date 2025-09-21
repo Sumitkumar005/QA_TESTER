@@ -78,6 +78,4 @@ This project is a powerful AI-driven code quality intelligence platform designed
 
 This project combines state-of-the-art AI, static analysis, and scalable data infrastructure to deliver a comprehensive code quality intelligence platform. It empowers developers to identify, understand, and fix code issues efficiently, improving software security, performance, and maintainability at scale.
 
----
 
-Feel free to share this on LinkedIn or other platforms to showcase the power and capabilities of this advanced code quality AI project!
